@@ -489,3 +489,11 @@ footer {
 footer p {
     text-align: center;
 }
+
+.centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures it's centered vertically on the screen */
+  }
+  
