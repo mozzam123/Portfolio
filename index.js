@@ -2,7 +2,8 @@ const express = require("express")
 const app = express()
 const path = require("path")
 
-
+// Define template path
+const template_path = path.join(__dirname, "views");
 
 // Serve static files from public directory
 app.use(express.static("public"))
@@ -13,7 +14,7 @@ app.set("views", template_path);
 app.set("views", path.join(__dirname, "views"));
 
 app.get('/', (req, res) => {
-    res.send("mozzam Inamdar")
+    res.render("index")
 })
 
 
